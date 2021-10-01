@@ -16,6 +16,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Install dotnet format
-      run: dotnet tool install dotnet-format --g
+      run: dotnet tool install dotnet-format -g
     - name: Format
       run: dotnet format CodeAnalysis.sln --fix-whitespace --fix-style info --fix-analyzers info --verbosity diagnostic --check
